@@ -1,0 +1,37 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap');
+
+
+:root {
+
+    --fontSize-title: 24px;
+    --fontSize-price: 18px;
+    --fontSize-discount: 16px;
+    --fontSize-detail: 16px;
+    --fontSize-body: 12px;
+
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    font-size: var(--fontSize-body);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
