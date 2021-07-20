@@ -2,7 +2,8 @@
 .home header {
     background-color: var(--colorAmarillo);
 }
-/*--------------- logo ---------------*/
+
+/*--------------- encabezado ---------------*/
 .home header section.encabezado {
     display: flex;
     justify-content: center;
@@ -22,6 +23,7 @@
     display: flex;
     width: 90%;
 }
+
 /*--------------- header - busqueda (input, a) ---------------*/
 .home header section.encabezado div.busqueda div.busq-centrado {
     display: flex;
@@ -38,7 +40,6 @@
     padding-right: 0;
     border-right: none;
 }
-
 .home header section.encabezado div.busqueda {
     display: flex;
     align-items: center;
@@ -58,7 +59,6 @@
     text-align: left;
 }
 
-
 /*--------------- nav-bar ---------------*/
 .home header section.menu nav ul {
     display: none;
@@ -75,6 +75,7 @@
 .home header section.menu nav ul a i {
     padding-left: 3px;
 }
+
 /*--------------- Burger ---------------*/
 .home header div.burger-container {
     display: flex;
@@ -97,10 +98,10 @@
 /*--------------- media queris tablet ---------------*/
 
 @media (min-width: 768px) {
+    /*  header - encabezado */
     .home header section.encabezado {
         padding: 0;
     }
-
     .home header section.encabezado div.photo-container, 
     .home header section.encabezado div.busqueda,
     .home header section.encabezado div {

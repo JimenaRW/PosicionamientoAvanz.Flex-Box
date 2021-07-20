@@ -1,4 +1,3 @@
-
 /* main */
 .home main {
     background: var(--colorGrisClaro);
@@ -8,7 +7,6 @@
 .home main div.banner {
     display: none;
 }
-
 .home main div.banner img{
     width: 100%;
 }
@@ -19,11 +17,12 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .home main section.product h2 {
     margin: 0;
+    width: 100%;
     padding: 10px;
-    text-align: center;
 }
 .home main section.product article.caja {
     margin: 10px 0;
@@ -33,11 +32,15 @@
 .home main section.product article.caja img {
     width: 100%
 }
+
+/* caja hija */
 .home main section.product article.caja div.caja-hija {
     border-top: solid 1px #ebebeb;
     display: flex;
     flex-direction: column;
 }
+
+/* main - product - posicionamiento de camión */
 .home main section.product article.caja div.caja-hija div.camion {
     height: 0;
 }
@@ -55,6 +58,8 @@
     top: -15px;
     color: var(--colorVerde);
 }
+
+/* main - product - caja hija - detalle de producto */
 .home main section.product article.caja div.caja-hija div.detail-product {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +84,36 @@
     font-size: var(--fontSize-detail);
 }
 
-@media (min-width: 769px) {
-    /* tablet */
-    
+/* media queris tablet */
+@media (min-width: 768px) {
+    /* mian - banner */
+    .home main div.banner {
+        display: block;
+    }
+    /* tamaño de article - 2 */
+    .home main section.product article.caja {
+        width: 40%;
+        margin: 10px 10px;
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    .home main section.product article.caja div.caja-hija div.detail-product div.price,
+    .home main section.product article.caja div.caja-hija div.detail-product div.discount {
+        width: 50%;
+    }
+    /* main - product - posicionamiento de camión */
+    .home main section.product article.caja div.caja-hija div.camion i {
+        left: 86%;
+    }
+}
+
+/* media queris laptop */
+@media (min-width: 1024px){
+    /* tamaño de article - 4 */
+    .home main section.product article.caja {
+        width: 19.5%;
+    }
+    /* main - product - posicionamiento de camión */
+    .home main section.product article.caja div.caja-hija div.camion i {
+        left: 83%;
+    }
 }
