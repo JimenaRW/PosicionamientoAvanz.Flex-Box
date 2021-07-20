@@ -1,0 +1,85 @@
+
+/* main */
+.home main {
+    background: var(--colorGrisClaro);
+}
+
+/* mian - banner */
+.home main div.banner {
+    display: none;
+}
+
+.home main div.banner img{
+    width: 100%;
+}
+
+/* main - product */
+.home main section.product {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home main section.product h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.home main section.product article.caja {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: white;
+}
+.home main section.product article.caja img {
+    width: 100%
+}
+.home main section.product article.caja div.caja-hija {
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+.home main section.product article.caja div.caja-hija div.camion {
+    height: 0;
+}
+.home main section.product article.caja div.caja-hija div.camion i {
+    display: block;
+    font-size: 1rem;
+    padding: 5px;
+    width: 21px;
+    height: 18px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    top: -15px;
+    color: var(--colorVerde);
+}
+.home main section.product article.caja div.caja-hija div.detail-product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home main section.product article.caja div.caja-hija div.detail-product div.price {
+    width: 30%;
+}
+.home main section.product article.caja div.caja-hija div.detail-product div.price p {
+    font-size: var(--fontSize-price);
+    color: black;
+}
+.home main section.product article.caja div.caja-hija div.detail-product div.discount {
+    width: 70%;
+}
+.home main section.product article.caja div.caja-hija div.detail-product div.discount p{
+    color: var(--colorVerde);
+    font-size: var(--fontSize-discount);
+    padding-left: 10px; /* Sacar en media queris mayores a tablet */
+}
+.home main section.product article.caja div.caja-hija div.detail-product p{
+    font-size: var(--fontSize-detail);
+}
+
+@media (min-width: 769px) {
+    /* tablet */
+    
+}

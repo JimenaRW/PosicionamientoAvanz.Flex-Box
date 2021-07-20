@@ -1,0 +1,21 @@
+/* footer */
+.home footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.home footer section div.icon {
+    color: var(--colorCeleste);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.home footer section p {
+    width: 65%;
+    text-align: center;
+}
+.home footer section span {
+    font-size: var(--fontSize-discount)
+}

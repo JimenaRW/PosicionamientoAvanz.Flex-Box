@@ -17,10 +17,12 @@
     --colorGrisClaro: #ebebeb;
     --colorVerde: #39b54a;
 }
-
+/* el archivo importado normalize se encargaría de agregarle padding y margin 0, entre otros esquemas que aporta */
 body {
     font-family:'Roboto', sans-serif;
     font-size: var(--fontSize-body);
+    box-sizing: border-box;
+    color: var(--colorGrisOscuro)
 }
 
 ul {

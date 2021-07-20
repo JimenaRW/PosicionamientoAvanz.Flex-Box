@@ -1,0 +1,150 @@
+/* --------------- header ---------------*/
+.home header {
+    background-color: var(--colorAmarillo);
+}
+/*--------------- logo ---------------*/
+.home header section.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    line-height: 2;
+}
+.home header section.encabezado div.photo-container, 
+.home header section.encabezado div.busqueda  {
+    width: 50%;
+    margin: 0 auto;
+}
+.home header section.encabezado img {
+    display: flex;
+    width: 90%;
+}
+/*--------------- header - busqueda (input, a) ---------------*/
+.home header section.encabezado div.busqueda div.busq-centrado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.home header section.encabezado div.busqueda div.busq-centrado input {
+    width: 75%;
+    line-height: 2.5;
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 7px;
+    padding-right: 0;
+    border-right: none;
+}
+
+.home header section.encabezado div.busqueda {
+    display: flex;
+    align-items: center;
+
+}
+.home header section.encabezado div.busqueda div.busq-centrado a {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+    line-height: 0;
+}
+.home header section.encabezado p {
+    color: black;
+    text-align: left;
+}
+
+
+/*--------------- nav-bar ---------------*/
+.home header section.menu nav ul {
+    display: none;
+    margin: 0;
+}
+.home header section.menu nav ul a {  
+    display: block;
+}
+.home header section.menu nav ul a li {
+    display: inline-block;
+    line-height: 2;
+    padding: 7px 0px;
+}
+.home header section.menu nav ul a i {
+    padding-left: 3px;
+}
+/*--------------- Burger ---------------*/
+.home header div.burger-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.home header div.burger-container a {
+    width: 1rem;
+    background-color: var(--colorCeleste);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin: auto;
+    text-align: center;
+}
+.home header .burger-container a.burger i {
+    font-size: 1rem;
+}
+
+/*--------------- media queris tablet ---------------*/
+
+@media (min-width: 768px) {
+    .home header section.encabezado {
+        padding: 0;
+    }
+
+    .home header section.encabezado div.photo-container, 
+    .home header section.encabezado div.busqueda,
+    .home header section.encabezado div {
+        width: 33%;
+        padding: 30px 0;
+    }
+    .home header section.encabezado img {
+        width: 100%
+    }
+
+    /* header - busqueda (input,a) */
+    .home header section.encabezado div.busqueda div.busq-centrado input {
+        width: 60%;
+    }
+
+    /* header - menu */
+    .home header section.menu {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .home header section.menu nav ul {
+        display: flex;
+    }
+    .home header section.menu nav ul a {  
+        margin: 0 10px;
+    }
+    .home header section.menu nav ul a:first-of-type {  
+        margin-left: 1.8px;
+    }
+    .home header section.menu nav ul a:last-of-type {  
+        margin-right: 0;
+    }
+    .home header .burger-container,
+    .home header .burger-container a.burger {
+        display: none;
+    }
+}
+
+/*--------------- media queris laptop ---------------*/
+@media (min-width: 1024px) {
+    /* header - busqueda (input,a) */
+    .home header section.encabezado div.busqueda div.busq-centrado input {
+        width: 75%;
+    }
+}

@@ -1,64 +1,3 @@
-/* header */
-.home header {
-    background-color: var(--colorAmarillo);
-}
-/* logo */
-.home header .photo-container img.photo {
-    width: 100px;
-    margin: 30px 0 0 30px;
-}
-
-.home header input {
-    margin:10px 0 0 20px;
-    
-}
-.home header a.search-button {
-    display: block;
-    width: min-content;
-    padding: 2px;
-    margin: 2px 0 10px 20px;
-    border-radius: 3px;
-    border: 1px solid var(--colorGrisOscuro);
-    background-color: white;
-}
-.home header p {
-    text-align: center;
-}
-
-/* Burger */
-.home header .burger-container {
-    height: 60px;
-}
-
-.home header .burger-container a.burger {
-    display: block;
-    width: 1rem;
-    background-color: var(--colorCeleste);
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-    margin: auto;
-    text-align: center;
-}
-.home header .burger-container a.burger i {
-    font-size: 1rem;
-}
-
-/* nav-bar */
-.home header ul {
-    display: none;
-    margin: 0;
-    padding: 10px 0;
-}
-.home header ul a {  
-    display: block;
-}
-
-.home header ul a li {
-    display: inline-block;
-    padding-right: 2px;
-}
-
 /* main */
 main {
     background: var(--colorGrisClaro);
@@ -93,11 +32,11 @@ main h2{
     border-top: solid 1px #ebebeb;
 }
 
-.home main section article.caja .caja-hija a {
+.home main section article.caja .caja-hija div.camion {
     display: inline-block;
     box-sizing: content-box;
 }
-.home main section article.caja .caja-hija a i {
+.home main section article.caja .caja-hija div.camion i {
     color: var(--colorVerde);
     margin: 15px;
     font-size: 1rem;
