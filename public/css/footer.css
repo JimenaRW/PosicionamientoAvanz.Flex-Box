@@ -19,3 +19,29 @@
 .home footer section span {
     font-size: var(--fontSize-discount)
 }
+
+@media (min-width: 768px) {
+    .home footer section p {
+        width: 35%;
+    }
+    .home footer p.copy {
+        padding-left: 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .home footer section p {
+        width: 80%;
+    }
+    .home footer section {
+        width: 33%;
+    }
+    .home footer p.copy {
+        padding-left: 0;
+    }
+}
